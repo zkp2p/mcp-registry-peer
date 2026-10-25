@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.7
 
 # Use a golang image to build the reviewer and proxy binaries (with cgo disabled).
-FROM golang:1.25-trixie AS gobuilder
+FROM golang:1.26.10-trixie AS gobuilder
 ENV CGO_ENABLED=0
 
 # Create and set a working directory for the code.
